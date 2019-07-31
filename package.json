@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.test.js",
   "scripts": {
-    "test": "mocha *.test.js",  
+    "test": "mocha *.test.js && nightwatch -c nightwatch.json",
+    "test:func": "nightwatch -c nightwatch.json",
+    "test:unit": "mocha *.test.js",
     "start": "node app.test.js"
   },
   "repository": {
@@ -19,6 +21,9 @@
   "homepage": "https://github.com/majdas007/app-backend#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "chromedriver": "^75.1.0",
+    "nightwatch": "^1.1.13",
+    "selenium-server-standalone-jar": "^3.141.5"
   }
 }

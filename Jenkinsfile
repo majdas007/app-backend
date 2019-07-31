@@ -11,7 +11,10 @@ stage('Checkout'){
 
 stage('RUN Unit Tests'){
     sh "npm install"
-    sh "npm test"
+    sh "npm run test:unit"
+}
+stage ('RUN Functional Tests'){
+    sh "npm run test:func"
 }
 
 stage('Docker Build, Push'){
