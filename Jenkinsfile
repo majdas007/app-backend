@@ -1,5 +1,5 @@
 node{
-def Namespace = "default"
+def Namespace = "ghprwh"
 def ImageName = "majdmn/node-back"
 def Creds = "docker-hub"
 try{
